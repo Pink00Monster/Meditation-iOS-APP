@@ -16,6 +16,8 @@
 		83B613CC29FD305400DC23FB /* PlaybackControllButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B613CB29FD305400DC23FB /* PlaybackControllButton.swift */; };
 		83B613CE29FD57DA00DC23FB /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B613CD29FD57DA00DC23FB /* MeditationViewModel.swift */; };
 		83B613D029FD6CC100DC23FB /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B613CF29FD6CC100DC23FB /* Extentions.swift */; };
+		83B613D229FD81E900DC23FB /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B613D129FD81E900DC23FB /* AudioManager.swift */; };
+		83B613D529FEC61C00DC23FB /* moonshine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 83B613D429FEC61C00DC23FB /* moonshine.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		83B613CB29FD305400DC23FB /* PlaybackControllButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControllButton.swift; sourceTree = "<group>"; };
 		83B613CD29FD57DA00DC23FB /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
 		83B613CF29FD6CC100DC23FB /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		83B613D129FD81E900DC23FB /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		83B613D329FEC4FC00DC23FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83B613D429FEC61C00DC23FB /* moonshine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moonshine.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +66,17 @@
 		83B613B829FD0E5600DC23FB /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				83B613D329FEC4FC00DC23FB /* Info.plist */,
 				83B613B929FD0E5600DC23FB /* MeditationApp.swift */,
 				83B613BB29FD0E5600DC23FB /* ContentView.swift */,
 				83B613C729FD140A00DC23FB /* MeditationView.swift */,
 				83B613C929FD2ACC00DC23FB /* PlayerView.swift */,
 				83B613CB29FD305400DC23FB /* PlaybackControllButton.swift */,
 				83B613CD29FD57DA00DC23FB /* MeditationViewModel.swift */,
+				83B613D129FD81E900DC23FB /* AudioManager.swift */,
 				83B613CF29FD6CC100DC23FB /* Extentions.swift */,
 				83B613BD29FD0E5A00DC23FB /* Assets.xcassets */,
+				83B613D429FEC61C00DC23FB /* moonshine.mp3 */,
 				83B613BF29FD0E5A00DC23FB /* Preview Content */,
 			);
 			path = Meditation;
@@ -140,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B613D529FEC61C00DC23FB /* moonshine.mp3 in Resources */,
 				83B613C129FD0E5A00DC23FB /* Preview Assets.xcassets in Resources */,
 				83B613BE29FD0E5A00DC23FB /* Assets.xcassets in Resources */,
 			);
@@ -154,6 +163,7 @@
 			files = (
 				83B613BC29FD0E5600DC23FB /* ContentView.swift in Sources */,
 				83B613C829FD140A00DC23FB /* MeditationView.swift in Sources */,
+				83B613D229FD81E900DC23FB /* AudioManager.swift in Sources */,
 				83B613BA29FD0E5600DC23FB /* MeditationApp.swift in Sources */,
 				83B613CC29FD305400DC23FB /* PlaybackControllButton.swift in Sources */,
 				83B613CE29FD57DA00DC23FB /* MeditationViewModel.swift in Sources */,
@@ -289,7 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -317,7 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
