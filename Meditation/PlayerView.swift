@@ -50,7 +50,7 @@ struct PlayerView: View {
                     }
                     Spacer()
                 }
-
+                
                 //MARK: Title
                 
                 Text(meditationVM.meditation.title)
@@ -60,13 +60,15 @@ struct PlayerView: View {
                 
                 //MARK: Playback
                 
-                
+                if let player = audioManager.player {
                     VStack(spacing: 5){
                         
                         //MARK: Playback Timeline
                         
-                        Slider(value: $value, in: 0...60)
+                        Slider(value: $value, in: 0...player.duration)
                             .tint(.white)
+                        
+                        
                         
                         //MARK: Playback Time
                         
@@ -124,8 +126,7 @@ struct PlayerView: View {
                         }
                     }
                 }
-
-            
+            }
             .padding(20)
         }
         .onAppear{

@@ -10,7 +10,7 @@ import AVKit
 
 final class AudioManager: ObservableObject{
 //    static let shared = AudioManager()
-    var player: AVAudioPlayer?
+    @Published var player: AVAudioPlayer?
     
     func startPlayer(track: String, isPreview: Bool = false){
         guard let url = Bundle.main.url(forResource: track, withExtension: "mp3") else{
