@@ -60,12 +60,12 @@ struct PlayerView: View {
                 
                 //MARK: Playback
                 
-                if let player = audioManager.player{
+                
                     VStack(spacing: 5){
                         
                         //MARK: Playback Timeline
                         
-                        Slider(value: $value, in: 0...player.duration)
+                        Slider(value: $value, in: 0...60)
                             .tint(.white)
                         
                         //MARK: Playback Time
@@ -125,7 +125,7 @@ struct PlayerView: View {
                     }
                 }
 
-            }
+            
             .padding(20)
         }
         .onAppear{
