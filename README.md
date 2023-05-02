@@ -9,7 +9,6 @@ https://www.youtube.com/watch?v=Bvep_4H9Kdg <br />
   <img src="/player.png" width="300" /> 
 </p>
 
-<br />
 There are some code changes compared to the tutorial due to <br />
 - Swift doesn't support some methods and attributes used in the tutorial any longer. 
 - The project can't be built without changing, there might be some missing code in this tutorial.
