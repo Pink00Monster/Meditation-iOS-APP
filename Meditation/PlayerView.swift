@@ -65,7 +65,15 @@ struct PlayerView: View {
                         
                         //MARK: Playback Timeline
                         
-                        Slider(value: $value, in: 0...player.duration)
+                        Slider(value: $value, in: 0...player.duration){
+                            editing in
+                            
+                            print("editing", editing)
+                            
+                            if !editing{
+                                player.currentTime = value
+                            }
+                        }
                             .tint(.white)
                         
                         
