@@ -12,6 +12,7 @@ struct PlayerView: View {
     var meditationVM: MeditationViewModel
     var isPreview: Bool = false
     @State private var value: Double = 0.0
+    @State private var isEditing: Bool = false
     @Environment(\.dismiss) var dismiss
     
     let timer = Timer
@@ -69,12 +70,12 @@ struct PlayerView: View {
                             editing in
                             
                             print("editing", editing)
-                            
+                            isEditing = editing
                             if !editing{
                                 player.currentTime = value
                             }
                         }
-                            .tint(.white)
+                        .tint(.white)
                         
                         
                         
@@ -142,7 +143,7 @@ struct PlayerView: View {
             audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
         }
         .onReceive(timer) { _ in
-            guard let player = audioManager.player else {return}
+            guard let player = audioManager.player, !isEditing else {return}
             value = player.currentTime
         }
     }
