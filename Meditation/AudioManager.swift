@@ -16,6 +16,7 @@ final class AudioManager: ObservableObject{
             print("isPlaying", isPlaying)
         }
     }
+    @Published private(set) var isLooping: Bool = false
     
     func startPlayer(track: String, isPreview: Bool = false){
         guard let url = Bundle.main.url(forResource: track, withExtension: "mp3") else{
@@ -63,4 +64,12 @@ final class AudioManager: ObservableObject{
             isPlaying = false
         }
     }
+    func toggleLoop(){
+        guard let player = player else {return}
+        
+        player.numberOfLoops = player.numberOfLoops == 0 ? -1 : 0
+        isLooping = player.numberOfLoops != 0
+        print("isLooping", isLooping)
+    }
+    
 }

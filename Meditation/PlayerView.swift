@@ -99,8 +99,9 @@ struct PlayerView: View {
                         
                         //MARK: Repeat Button
                         
-                        PlaybackControllButton(systemName: "repeat"){
-                            
+                        let color: Color = audioManager.isLooping ? .teal : .white
+                        PlaybackControllButton(systemName: "repeat", color: color){
+                            audioManager.toggleLoop()
                         }
                         
                         Spacer()
@@ -108,7 +109,7 @@ struct PlayerView: View {
                         //MARK: Backward Button
                         
                         PlaybackControllButton(systemName: "gobackward.10"){
-                            
+                            player.currentTime -= 10
                         }
                         
                         Spacer()
@@ -124,7 +125,7 @@ struct PlayerView: View {
                         //MARK: Forward Button
                         
                         PlaybackControllButton(systemName: "goforward.10"){
-                            
+                            player.currentTime += 10
                         }
                         
                         Spacer()
