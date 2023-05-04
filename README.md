@@ -3,7 +3,7 @@ This is a Meditation audio play app in SwiftUI with AVKit built by following thi
 https://www.youtube.com/watch?v=Bvep_4H9Kdg <br />
 
 <!-- <img src="/main.png"  width="400" height=auto>
-<img src="/player.png"  width="400" height=auto> -->
+<img src="/playerPage.png"  width="400" height=auto> -->
 <p float="left" align="middle">
   <img src="/main.png" width="300" />
   <img src="/player.png" width="300" /> 
