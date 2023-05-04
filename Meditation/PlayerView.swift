@@ -43,6 +43,7 @@ struct PlayerView: View {
                 
                 HStack {
                     Button {
+                        audioManager.stop()
                         dismiss()
                     } label: {
                         Image(systemName: "xmark.circle.fill")
@@ -131,7 +132,8 @@ struct PlayerView: View {
                         //MARK: Stop Button
                         
                         PlaybackControllButton(systemName: "stop.fill"){
-                            
+                            audioManager.stop()
+                            dismiss()
                         }
                     }
                 }
