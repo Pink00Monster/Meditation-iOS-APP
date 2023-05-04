@@ -34,4 +34,17 @@ final class AudioManager: ObservableObject{
             print("Fail to initialize player", error)
         }
     }
+    
+    func playPause(){
+        guard let player = player else{
+            print("Instance of audio player not found")
+            return
+        }
+        if player.isPlaying {
+            player.pause()
+        } else {
+            player.play()
+        }
+        
+    }
 }

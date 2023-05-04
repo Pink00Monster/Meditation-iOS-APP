@@ -114,8 +114,8 @@ struct PlayerView: View {
                         
                         //MARK: Play/Pause Button
                         
-                        PlaybackControllButton(systemName: "play.circle.fill", fontSize: 44){
-                            
+                        PlaybackControllButton(systemName: player.isPlaying ? "pause.circle.fill": "play.circle.fill", fontSize: 44){
+                            audioManager.playPause()
                         }
                         
                         Spacer()
