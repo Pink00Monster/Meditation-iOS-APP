@@ -68,9 +68,7 @@
 			children = (
 				83B613D329FEC4FC00DC23FB /* Info.plist */,
 				83B613B929FD0E5600DC23FB /* MeditationApp.swift */,
-				83B613BB29FD0E5600DC23FB /* ContentView.swift */,
-				83B613C729FD140A00DC23FB /* MeditationView.swift */,
-				83B613C929FD2ACC00DC23FB /* PlayerView.swift */,
+				83E695712A0696890037AF6B /* View */,
 				83B613CB29FD305400DC23FB /* PlaybackControllButton.swift */,
 				83B613CD29FD57DA00DC23FB /* MeditationViewModel.swift */,
 				83B613D129FD81E900DC23FB /* AudioManager.swift */,
@@ -88,6 +86,16 @@
 				83B613C029FD0E5A00DC23FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83E695712A0696890037AF6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83B613BB29FD0E5600DC23FB /* ContentView.swift */,
+				83B613C729FD140A00DC23FB /* MeditationView.swift */,
+				83B613C929FD2ACC00DC23FB /* PlayerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
