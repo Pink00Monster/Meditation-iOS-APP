@@ -14,6 +14,7 @@ struct MeditationView: View {
     @State private var showPlayer = false
     
     var body: some View {
+        
         VStack(spacing: 0){
             
             // MARK: Image
